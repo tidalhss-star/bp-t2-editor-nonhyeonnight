@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울 유흥 업종 비교 분석 가이드: 셔츠룸, 룸싸롱, 텐프로, 가라오케 객관적 매트릭스</title>
+    <meta name="description" content="서울 유흥 업종(셔츠룸, 룸싸롱, 텐프로, 가라오케 등)의 시스템, 구조, 비용 형태를 객관적인 데이터로 비교 분석하는 전문 가이드입니다. 허위 정보 없이 오직 팩트 기반의 정보를 제공합니다.">
+    <meta name="keywords" content="유흥 업종 비교, 셔츠룸 룸싸롱 차이, 텐프로 쩜오 비교, 서울 가라오케 가격, 유흥 선택 기준">
+    <link rel="canonical" href="https://editor.nonhyeonnight.xyz/blog-1.html">
+    
+    <!-- Design System Meta -->
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://editor.nonhyeonnight.xyz/blog-1.html">
+    <meta property="og:title" content="서울 유흥 업종 비교 분석 가이드 | 팩트 기반 데이터 매트릭스">
+    <meta property="og:description" content="셔츠룸, 룸싸롱, 텐프로, 가라오케 등 각 업종별 시스템과 비용 구조를 투명하게 비교 분석하여 실패 없는 선택 기준을 제시합니다.">
+
+    <style>
+        /* CSS RESET & VARIABLES */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --acid-yellow: #DFFF00;
+            --pure-black: #000000;
+            --pure-white: #FFFFFF;
+            --dark-gray: #1A1A1A;
+            --light-gray: #F3F3F3;
+            --border-width-thick: 4px;
+            --border-width-thin: 2px;
+            --brutalist-shadow: 5px 5px 0px #000000;
+            --brutalist-shadow-hover: 2px 2px 0px #000000;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            background-color: var(--pure-white);
+            color: var(--pure-black);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* STREET BRUTALIST & NEO-GROTESQUE UTILITIES */
+        .r-ico-4fa9-border {
+            border: var(--border-width-thick) solid var(--pure-black);
+        }
+
+        .n-txt-5bpw-border {
+            -webkit-text-stroke: 1.5px var(--pure-black);
+            color: var(--acid-yellow);
+            font-weight: 900;
+        }
+
+        .m-card-9vfc-box {
+            background: var(--pure-white);
+            border: var(--border-width-thick) solid var(--pure-black);
+            box-shadow: var(--brutalist-shadow);
+            padding: 24px;
+            transition: all 0.15s ease-in-out;
+            position: relative;
+        }
+
+        .m-card-9vfc-box:hover {
+            transform: translate(3px, 3px);
+            box-shadow: var(--brutalist-shadow-hover);
+            background-color: var(--acid-yellow);
+        }
+
+        .m-card-9vfc-box.accent-card {
+            background-color: var(--acid-yellow);
+        }
+        .m-card-9vfc-box.accent-card:hover {
+            background-color: var(--pure-white);
+        }
+
+        /* LAYOUT & NAV-PRESENT */
+        header {
+            background-color: var(--pure-black);
+            color: var(--acid-yellow);
+            padding: 15px 20px;
+            border-bottom: var(--border-width-thick) solid var(--pure-black);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            text-decoration: none;
+            color: var(--acid-yellow);
+            display: inline-block;
+            border: var(--border-width-thin) solid var(--acid-yellow);
+            padding: 5px 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: var(--pure-white);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding: 5px 10px;
+            border: var(--border-width-thin) transparent;
+            transition: all 0.2s;
+        }
+
+        .nav-links a:hover {
+            background-color: var(--acid-yellow);
+            color: var(--pure-black);
+            border-color: var(--pure-black);
+        }
+
+        /* HERO SECTION */
+        .hero-section {
+            background-color: var(--acid-yellow);
+            border-bottom: var(--border-width-thick) solid var(--pure-black);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: "FACT ONLY";
+            position: absolute;
+            font-size: 8rem;
+            font-weight: 900;
+            color: rgba(0, 0, 0, 0.05);
+            bottom: -20px;
+            right: -20px;
+            pointer-events: none;
+            line-height: 1;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            word-break: keep-all;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            max-width: 800px;
+            margin: 0 auto;
+            font-weight: 700;
+            background-color: var(--pure-black);
+            color: var(--pure-white);
+            padding: 10px 20px;
+            display: inline-block;
+            transform: rotate(-1deg);
+        }
+
+        /* RESPONSIVE LAYOUT (768px Grid) */
+        .main-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .main-container {
+                grid-template-columns: 3fr 1fr;
+            }
+        }
+
+        /* CONTENT STYLING */
+        .content-area {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .intro-anecdote {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            background-color: var(--light-gray);
+            border-left: 8px solid var(--pure-black);
+            padding: 25px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .intro-anecdote::before {
+            content: "“";
+            font-size: 4rem;
+            font-family: serif;
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            opacity: 0.15;
+        }
+
+        h2.section-title {
+            font-size: 2rem;
+            font-weight: 900;
+            background-color: var(--pure-black);
+            color: var(--pure-white);
+            padding: 10px 20px;
+            display: inline-block;
+            margin-bottom: 25px;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            border-right: 6px solid var(--acid-yellow);
+        }
+
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+            color: var(--dark-gray);
+            word-break: keep-all;
+        }
+
+        /* BRUTALIST COMPARISON TABLE */
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            border: var(--border-width-thick) solid var(--pure-black);
+            box-shadow: var(--brutalist-shadow);
+            margin: 30px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            background-color: var(--pure-white);
+            min-width: 600px;
+        }
+
+        th, td {
+            padding: 16px;
+            border: var(--border-width-thin) solid var(--pure-black);
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: var(--pure-black);
+            color: var(--pure-white);
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+
+        tr:hover {
+            background-color: var(--acid-yellow);
+        }
+
+        /* GRID OF SECTORS */
+        .sector-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        @media (min-width: 600px) {
+            .sector-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .sector-badge {
+            background-color: var(--pure-black);
+            color: var(--pure-white);
+            padding: 4px 8px;
+            font-size: 0.8rem;
+            font-weight: 900;
+            display: inline-block;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .sector-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* SIDEBAR (q-side-avsg / q-sid) */
+        .q-side-avsg {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .q-sid {
+            position: sticky;
+            top: 100px;
+        }
+
+        .sidebar-widget {
+            border: var(--border-width-thick) solid var(--pure-black);
+            padding: 20px;
+            background-color: var(--pure-white);
+            box-shadow: var(--brutalist-shadow);
+        }
+
+        .sidebar-widget-title {
+            font-size: 1.2rem;
+            font-weight: 900;
+            border-bottom: var(--border-width-thin) solid var(--pure-black);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .sidebar-menu li a {
+            color: var(--pure-black);
+            text-decoration: none;
+            font-weight: 700;
+            display: block;
+            padding: 8px;
+            border: var(--border-width-thin) transparent;
+            transition: all 0.15s;
+        }
+
+        .sidebar-menu li a:hover {
+            background-color: var(--acid-yellow);
+            border: var(--border-width-thin) solid var(--pure-black);
+            padding-left: 12px;
+        }
+
+        /* FAQ SECTION */
+        .faq-section {
+            margin-top: 40px;
+        }
+
+        .faq-item {
+            border: var(--border-width-thick) solid var(--pure-black);
+            margin-bottom: 15px;
+            background-color: var(--pure-white);
+        }
+
+        .faq-question {
+            background-color: var(--pure-black);
+            color: var(--pure-white);
+            padding: 15px;
+            font-weight: 800;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: "▼";
+            font-size: 0.8rem;
+        }
+
+        .faq-answer {
+            padding: 20px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            background-color: var(--pure-white);
+            border-top: var(--border-width-thin) solid var(--pure-black);
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--pure-black);
+            color: var(--pure-white);
+            padding: 60px 20px;
+            margin-top: 80px;
+            border-top: var(--border-width-thick) solid var(--pure-black);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .footer-content {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--acid-yellow);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .footer-text {
+            font-size: 0.9rem;
+            color: #CCCCCC;
+            line-height: 1.7;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            color: #CCCCCC;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--acid-yellow);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 40px auto 0 auto;
+            padding-top: 20px;
+            border-top: 1px solid #333333;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888888;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header>
+        <div class="nav-container">
+            <a href="https://editor.nonhyeonnight.xyz" class="logo">NONHYEON ANALYSIS</a>
+            <nav class="nav-links">
+                <a href="https://editor.nonhyeonnight.xyz">홈</a>
+                <a href="https://editor.nonhyeonnight.xyz" style="background-color: var(--acid-yellow); color: var(--pure-black); border-color: var(--pure-black);">가이드</a>
+                <a href="https://editor.nonhyeonnight.xyz">업종 분석</a>
+                <a href="https://editor.nonhyeonnight.xyz">매트릭스</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <h1 class="hero-title">서울 유흥 업종<br><span class="n-txt-5bpw-border">정밀 비교 분석 매트릭스</span></h1>
+        <p class="hero-subtitle">허위 광고와 모호한 용어 배제, 오직 구조와 팩트만 전달하는 완벽 가이드</p>
+    </section>
+
+    <!-- MAIN GRID CONTAINER -->
+    <main class="main-container">
+        
+        <!-- CONTENT AREA (LEFT) -->
+        <div class="content-area">
+            
+            <!-- INTRODUCTORY ANECDOTE -->
+            <div class="intro-anecdote">
+                <strong>"거기 시스템이 정확히 어떻게 돼요?"</strong><br>
+                지인들과 모임을 준비하거나 비즈니스 자리를 조율할 때 다들 한 번쯤 겪어봤을 겁니다. 인터넷 검색창엔 온통 화려한 미사여구와 정체 모를 연락처뿐, 정작 내가 지불할 비용 구조가 어떻게 설계되어 있고 시스템 회전 방식이 어떻게 돌아가는지 객관적으로 정리해 둔 곳은 찾기 힘들었죠. 돈을 지불하고 나서야 "아, 내가 원했던 분위기는 이게 아닌데..." 하고 후회하는 분들을 너무나 많이 봤습니다. 이 가이드는 바로 그런 피로감에서 출발했습니다. 복잡하게 얽힌 서울 핵심 업종들의 실제 매커니즘을 칼날처럼 예리하게 해부해 드립니다.
+            </div>
+
+            <!-- SECTION 1: CORE COMPARISON MATRIX -->
+            <section id="comparison-matrix">
+                <h2 class="section-title">01. 4대 핵심 업종 직관 비교표</h2>
+                <p>각 업종의 가장 결정적인 차이는 '회전(로테이션) 유무', '시간 제한 형태', 그리고 '비용 청구의 구조'에 있습니다. 이를 한눈에 볼 수 있도록 정밀 매트릭스로 요약했습니다.</p>
+                
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>셔츠룸</th>
+                                <th>정통 룸싸롱</th>
+                                <th>텐프로 / 쩜오</th>
+                                <th>가라오케</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <strong><td>시스템 특징</td></strong>
+                                <td>정해진 시간 내 단일 서비스 진행 (셔츠 탈바꿈 시스템)</td>
+                                <td>전통적인 1:1 매칭 및 밀착 케어 중심</td>
+                                <td>다수 테이블 동시 로테이션 (시간 분할 입실)</td>
+                                <td>자유로운 가창 및 파티 공간 제공 위주</td>
+                            </tr>
+                            <tr>
+                                <strong><td>로테이션 유무</td></strong>
+                                <td>없음 (지정 시간 풀타임 고정)</td>
+                                <td>없음 (원칙적 고정)</td>
+                                <td>있음 (시간별 로테이션 진행)</td>
+                                <td>없음 (자유 선택 방식)</td>
+                            </tr>
+                            <tr>
+                                <strong><td>주요 가격 구조</td></strong>
+                                <td>정찰제 경향 강함 (주류+시간 일괄 계산)</td>
+                                <td>중고가 (주류 세트 단위 + 룸비 별도)</td>
+                                <td>최고가 (묶음 단위 세트 + 로테이션 비용 누적)</td>
+                                <td>중저가 (시간당 룸비 + 단품 주류 선택 가능)</td>
+                            </tr>
+                            <tr>
+                                <strong><td>가장 적합한 목적</td></strong>
+                                <td>직관적이고 확실한 타임 킬링, 캐주얼한 모임</td>
+                                <td>중요한 비즈니스 미팅, 전통적 대접 자리</td>
+                                <td>최상의 프라이빗 사교, VIP 의전</td>
+                                <td>단체 회식, 가벼운 생일 파티 및 친목 도모</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION 2: SECTOR DEEP DIVE -->
+            <section id="sector-details">
+                <h2 class="section-title">02. 업종별 심층 해부 및 작동 원리</h2>
+                <p>단순한 가격 비교를 넘어, 각 공간이 어떻게 작동하고 소비자가 어떤 경험을 취하게 되는지 그 본질적인 시스템을 파헤쳐 봅니다.</p>
+
+                <div class="sector-grid">
+                    
+                    <!-- CARD 1: 셔츠룸 -->
+                    <div class="m-card-9vfc-box">
+                        <span class="sector-badge">CASUAL & FAST</span>
+                        <h3 class="sector-title">셔츠룸 (Shirts Room) <span style="font-size: 1.5rem;">👔</span></h3>
+                        <p>서울 강남권을 중심으로 빠르게 대중화된 시스템입니다. 입장 후 특정 이벤트 타임에 비즈니스 캐주얼(셔츠) 스타일로 복장을 전환하는 명확한 콘셉트를 가집니다.</p>
+                        <p><strong>핵심 매커니즘:</strong> 로테이션이 전혀 없고 정해진 시간 동안 온전히 집중되는 형태라 시간 낭비가 적고, 가격이 상대적으로 투명하게 정찰화되어 있는 것이 특징입니다.</p>
+                    </div>
+
+                    <!-- CARD 2: 정통 룸싸롱 -->
+                    <div class="m-card-9vfc-box">
+                        <span class="sector-badge">CLASSIC & PRIVATE</span>
+                        <h3 class="sector-title">정통 룸싸롱 (Classic Salon) <span style="font-size: 1.5rem;">🥃</span></h3>
+                        <p>우리가 흔히 생각하는 가장 정통적인 형태의 밀폐형 비즈니스 공간입니다. 파티션이 확실히 나뉘어 있어 외부 시선으로부터 철저히 보호받습니다.</p>
+                        <p><strong>핵심 매커니즘:</strong> 1:1 케어를 기본 원칙으로 삼으며, 대화와 접대의 격식을 중요하게 생각하는 비즈니스 바이어 접대나 격조 있는 모임에 최적화되어 있습니다.</p>
+                    </div>
+
+                    <!-- CARD 3: 텐프로 / 쩜오 -->
+                    <div class="m-card-9vfc-box accent-card">
+                        <span class="sector-badge" style="background-color: var(--pure-black); color: var(--acid-yellow);">HIGH-END SYSTEM</span>
+                        <h3 class="sector-title">텐프로 / 쩜오 (High-End) <span style="font-size: 1.5rem;">👑</span></h3>
+                        <p>최상위 단계의 서비스 퀄리티와 프라이빗함을 지향하는 공간입니다. 이곳의 가장 독특한 특징은 바로 '로테이션(시간 쪼개기)' 시스템에 있습니다.</p>
+                        <p><strong>핵심 매커니즘:</strong> 한 명의 담당자가 여러 방을 동시에 돌며 순차적으로 접객하는 구조입니다. 시간당 비용이 매우 높게 책정되며, 인맥 형성과 최고급 사교를 목적으로 운영됩니다.</p>
+                    </div>
+
+                    <!-- CARD 4: 가라오케 -->
+                    <div class="m-card-9vfc-box">
+                        <span class="sector-badge">ENTERTAINMENT</span>
+                        <h3 class="sector-title">가라오케 (Karaoke) <span style="font-size: 1.5rem;">🎤</span></h3>
+                        <p>음악과 노래, 파티 자체에 초점을 맞춘 개방적이고 캐주얼한 공간입니다. 시스템적인 제약이 가장 적고 자유도가 높습니다.</p>
+                        <p><strong>핵심 매커니즘:</strong> 주류와 음향 장비 대여(룸비)가 기본 축을 이루며, 추가적인 파트너 매칭은 옵션 영역에 가깝습니다. 생일 파티나 피로연 등 단체 친목에 가장 유리합니다.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SECTION 3: DECISION CRITERIA -->
+            <section id="selection-guide">
+                <h2 class="section-title">03. 실패 없는 업종 선택 가이드라인</h2>
+                <p>상황에 맞지 않는 업종 선택은 시간과 비용을 낭비하는 가장 빠른 길입니다. 아래의 세 가지 기준 프로세스를 통해 오늘의 목적에 딱 맞는 공간을 도출해 보세요.</p>
+                
+                <div class="m-card-9vfc-box" style="margin-bottom: 20px;">
+                    <h4 style="font-size: 1.2rem; font-weight: 900; margin-bottom: 10px;">STEP 1. 예산의 유연성 판단</h4>
+                    <p style="margin-bottom: 0;">가장 먼저 예산의 상한선을 명확히 해야 합니다. 추가 청구 금액(T.C 및 룸비 추가금)의 변동 폭이 좁은 곳을 원한다면 <strong>셔츠룸</strong>이나 <strong>가라오케</strong>처럼 정찰제 성격이 강한 곳이 안전하며, 예산보다 비즈니스 성과나 격식이 우선이라면 <strong>정통 룸</strong>이나 <strong>하이엔드 업종</strong>을 고려해야 합니다.</p>
+                </div>
+
+                <div class="m-card-9vfc-box" style="margin-bottom: 20px;">
+                    <h4 style="font-size: 1.2rem; font-weight: 900; margin-bottom: 10px;">STEP 2. 동반자의 성격 분석</h4>
+                    <p style="margin-bottom: 0;">편한 친구들과의 모임이라면 가창과 댄스가 자유로운 <strong>가라오케</strong>가 최고의 텐션을 보장합니다. 반면, 격식과 조용한 대화가 필요한 거래처 바이어와의 자리라면 음향 데시벨이 낮고 프라이버시가 완벽히 보장되는 <strong>정통 룸싸롱</strong>이 비즈니스 성공률을 높여줍니다.</p>
+                </div>
+
+                <div class="m-card-9vfc-box">
+                    <h4 style="font-size: 1.2rem; font-weight: 900; margin-bottom: 10px;">STEP 3. 시간 대비 집중도 체크</h4>
+                    <p style="margin-bottom: 0;">"내가 지불한 시간만큼 온전히 내 파트너가 내 옆에 상주하길 원하는가?" 이 질문에 YES라면 로테이션이 있는 텐프로/쩜오는 피해야 합니다. 한 사람과의 진도 있는 대화와 케어를 원한다면 무조건 고정 시스템(셔츠룸 또는 정통 룸)으로 방향을 잡는 것이 현명합니다.</p>
+                </div>
+            </section>
+
+            <!-- SECTION 4: FAQ -->
+            <section class="faq-section" id="faq">
+                <h2 class="section-title">04. 자주 묻는 질문 (FAQ)</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q. 셔츠룸과 일반 룸싸롱의 가장 큰 차이점은 무엇인가요?</div>
+                    <div class="faq-answer">
+                        가장 큰 차이는 '시간의 효율성'과 '시스템의 가시성'입니다. 셔츠룸은 입장 직후 정해진 연출(셔츠 갈아입기)이 매끄럽고 빠르게 진행되어 초반 어색함이 최소화되는 반면, 정통 룸싸롱은 대화와 정서적 교감을 쌓아가는 속도가 상대적으로 완만하고 정중합니다. 또한 셔츠룸이 상대적으로 시간당 비용 정산이 매우 정직하게 설계되어 있습니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q. 로테이션 시스템은 구체적으로 어떻게 운영되나요?</div>
+                    <div class="faq-answer">
+                        텐프로나 쩜오 등에서 채택하는 방식으로, 한 명의 접객 담당자가 한 방에만 머무는 것이 아니라 보통 3~4개의 방을 동시에 지정받아 일정 시간(예: 15분~20분) 간격으로 방을 옮겨 다니는 구조입니다. 따라서 자리에 머무는 순수 시간 대비 비용이 높게 책정되므로, 초심자보다는 비즈니스적 인맥 확장이나 상위 소셜 네트워크 형성을 원하는 숙련된 소비자에게 적합합니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q. 예상치 못한 추가 요금 폭탄을 피하는 팁이 있을까요?</div>
+                    <div class="faq-answer">
+                        가장 좋은 방법은 입장 전 담당 실장(부장)에게 '주류 세트 가격, 룸 이용 시간 제한 유무, 연장 시 추가되는 시간당 T.C(Table Charge) 및 룸비'를 텍스트나 명확한 구두 합의로 확답받는 것입니다. 특히 연장(오버타임) 기준을 명확히 인지하고 있어야 계산서 상의 괴리를 막을 수 있습니다.
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- SIDEBAR (RIGHT) -->
+        <aside class="q-side-avsg">
+            <div class="q-sid">
+                
+                <!-- WIDGET 1: QUICK NAVIGATION -->
+                <div class="sidebar-widget" style="margin-bottom: 30px;">
+                    <h3 class="sidebar-widget-title">빠른 탐색</h3>
+                    <ul class="sidebar-menu">
+                        <li><a href="#comparison-matrix">01. 4대 업종 비교표</a></li>
+                        <li><a href="#sector-details">02. 업종별 심층 분석</a></li>
+                        <li><a href="#selection-guide">03. 선택 가이드라인</a></li>
+                        <li><a href="#faq">04. 자주 묻는 질문</a></li>
+                    </ul>
+                </div>
+
+                <!-- WIDGET 2: CORE FACT CHECK -->
+                <div class="sidebar-widget" style="background-color: var(--acid-yellow);">
+                    <h3 class="sidebar-widget-title" style="border-bottom-color: var(--pure-black);">필독 공지</h3>
+                    <p style="font-size: 0.9rem; font-weight: 700; margin-bottom: 10px; line-height: 1.5;">본 블로그는 강남 및 서울 전역의 유흥 업종 시스템을 연구원 수준의 객관적 시각으로 분석합니다.</p>
+                    <p style="font-size: 0.85rem; margin-bottom: 0;">과장 광고에 현혹되지 않고 합리적인 소비를 하실 수 있도록 돕는 것이 본 플랫폼의 유일한 목적입니다.</p>
+                </div>
+
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <span class="footer-logo">NONHYEON ANALYSIS</span>
+                <p class="footer-text">서울 논현 및 강남권 유흥 산업의 복잡한 시스템과 구조를 객관적인 데이터 매트릭스로 분석하여 제공하는 전문 정보 플랫폼입니다. 우리는 음성적인 허위 정보를 걷어내고 투명한 정보 공개를 지향합니다.</p>
+            </div>
+            <div>
+                <h4 style="color: var(--acid-yellow); font-size: 1.1rem; font-weight: 900; margin-bottom: 15px; text-transform: uppercase;">사이트 맵</h4>
+                <ul class="footer-links">
+                    <li><a href="https://editor.nonhyeonnight.xyz">공식 홈으로 가기</a></li>
+                    <li><a href="#comparison-matrix">업종별 매트릭스 분석</a></li>
+                    <li><a href="#sector-details">시스템 해부 가이드</a></li>
+                    <li><a href="#faq">자주 묻는 질문 아카이브</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NONHYEON ANALYSIS. All Rights Reserved. 본 사이트의 콘텐츠는 정보 제공 목적으로만 작성되었습니다.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

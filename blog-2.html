@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유흥 업종 비교 분석: 셔츠룸, 룸싸롱, 텐프로, 가라오케 차이점 총정리</title>
+    <meta name="description" content="서울 유흥 업종(셔츠룸, 룸싸롱, 텐프로, 가라오케 등)의 가격, 분위기, 적합 인원을 객관적인 데이터로 비교 분석하는 전문 정보 블로그입니다. 허위 광고 없이 오직 팩트 기반의 정밀 매트릭스를 제공합니다.">
+    <meta name="keywords" content="유흥 업종 비교, 셔츠룸 룸싸롱 차이, 텐프로 쩜오 비교, 서울 가라오케 가격, 유흥 선택 기준">
+    <link rel="canonical" href="https://editor.nonhyeonnight.xyz/blog-2.html">
+    
+    <!-- Design System Meta -->
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://editor.nonhyeonnight.xyz/blog-2.html">
+    <meta property="og:title" content="유흥 업종 비교 분석: 팩트 기반 가이드">
+    <meta property="og:description" content="셔츠룸부터 텐프로까지, 서울 야간 업종의 시스템과 비용 구조를 투명하게 비교합니다.">
+
+    <style>
+        /* CSS RESET & VARIABLES */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --acid-yellow: #dfff00;
+            --pure-black: #000000;
+            --pure-white: #ffffff;
+            --dark-gray: #1a1a1a;
+            --light-gray: #f3f3f3;
+            --border-heavy: 4px solid #000000;
+            --border-thin: 2px solid #000000;
+            --shadow-brutal: 8px 8px 0px #000000;
+            --shadow-brutal-hover: 3px 3px 0px #000000;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, sans-serif;
+            background-color: var(--light-gray);
+            color: var(--pure-black);
+            line-height: 1.5;
+            padding-bottom: 100px;
+        }
+
+        /* STREET BRUTALIST & NEO-GROTESQUE UTILITIES */
+        .r-ico-4fa9-border {
+            border: var(--border-heavy);
+            background-color: var(--pure-white);
+            padding: 20px;
+            box-shadow: var(--shadow-brutal);
+        }
+
+        .n-txt-5bpw-border {
+            background-color: var(--acid-yellow);
+            color: var(--pure-black);
+            padding: 5px 15px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border: var(--border-thin);
+            display: inline-block;
+            font-size: 1.1rem;
+            transform: rotate(-1deg);
+        }
+
+        .m-card-9vfc-box {
+            background-color: var(--pure-white);
+            border: var(--border-heavy);
+            padding: 30px;
+            box-shadow: var(--shadow-brutal);
+            transition: all 0.15s ease-in-out;
+            position: relative;
+        }
+
+        .m-card-9vfc-box:hover {
+            transform: translate(5px, 5px);
+            box-shadow: var(--shadow-brutal-hover);
+        }
+
+        /* LAYOUT */
+        header {
+            background-color: var(--pure-black);
+            color: var(--pure-white);
+            padding: 20px;
+            border-bottom: var(--border-heavy);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            letter-spacing: -1.5px;
+            text-transform: uppercase;
+            color: var(--acid-yellow);
+            text-decoration: none;
+        }
+
+        nav a {
+            color: var(--pure-white);
+            text-decoration: none;
+            font-weight: 700;
+            margin-left: 20px;
+            font-size: 1rem;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover {
+            color: var(--acid-yellow);
+            border-bottom: 2px solid var(--acid-yellow);
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                grid-template-columns: 1fr;
+            }
+            .q-side-avsg {
+                display: none;
+            }
+        }
+
+        /* SIDEBAR */
+        .q-side-avsg {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .q-sid {
+            background-color: var(--acid-yellow);
+            border: var(--border-heavy);
+            padding: 20px;
+            box-shadow: var(--shadow-brutal);
+        }
+
+        .q-sid h3 {
+            font-size: 1.4rem;
+            font-weight: 900;
+            margin-bottom: 15px;
+            border-bottom: var(--border-thin);
+            padding-bottom: 10px;
+        }
+
+        .q-sid ul {
+            list-style: none;
+        }
+
+        .q-sid li {
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .q-sid li a {
+            color: var(--pure-black);
+            text-decoration: none;
+        }
+
+        .q-sid li a:hover {
+            text-decoration: underline;
+        }
+
+        /* CONTENT STYLING */
+        .hero {
+            background-color: var(--pure-black);
+            color: var(--pure-white);
+            padding: 60px 40px;
+            border: var(--border-heavy);
+            box-shadow: var(--shadow-brutal);
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #ccc;
+            max-width: 800px;
+        }
+
+        .grid-comparison {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            border-left: 10px solid var(--pure-black);
+            padding-left: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .article-body {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .article-body p {
+            margin-bottom: 20px;
+        }
+
+        /* FACT MATRIX TABLE */
+        .matrix-table-wrapper {
+            overflow-x: auto;
+            border: var(--border-heavy);
+            margin: 40px 0;
+            background-color: var(--pure-white);
+            box-shadow: var(--shadow-brutal);
+        }
+
+        .matrix-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 1rem;
+        }
+
+        .matrix-table th, .matrix-table td {
+            padding: 15px 20px;
+            border: var(--border-thin);
+        }
+
+        .matrix-table th {
+            background-color: var(--pure-black);
+            color: var(--pure-white);
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .matrix-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .matrix-table tr:hover {
+            background-color: var(--acid-yellow);
+        }
+
+        /* FAQ SECTION */
+        .faq-block {
+            margin-top: 50px;
+        }
+
+        .faq-item {
+            border: var(--border-heavy);
+            background-color: var(--pure-white);
+            margin-bottom: 20px;
+            padding: 25px;
+            box-shadow: var(--shadow-brutal);
+        }
+
+        .faq-question {
+            font-size: 1.3rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .faq-answer {
+            font-size: 1rem;
+            color: #444;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--pure-black);
+            color: var(--pure-white);
+            padding: 40px 20px;
+            border-top: var(--border-heavy);
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-text {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">FACT MATRIX</a>
+            <nav>
+                <a href="/">홈</a>
+                <a href="#comparison">업종비교</a>
+                <a href="#matrix">정밀매트릭스</a>
+                <a href="#faq">자주묻는질문</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <main>
+            <!-- HERO SECTION -->
+            <section class="hero">
+                <div class="n-txt-5bpw-border">DECISION GUIDE</div>
+                <h1 style="margin-top: 15px;">서울 야간 유흥 업종<br>객관적 비교 매트릭스</h1>
+                <p>셔츠룸, 정통 룸싸롱, 텐프로, 가라오케... 이름은 복잡하고 시스템은 헷갈리시죠? 광고주의 미화된 문구를 걷어내고 시스템, 가격대, 분위기를 팩트 기반의 데이터로 깔끔하게 정리해 드립니다.</p>
+            </section>
+
+            <!-- INTRO SECTION -->
+            <section class="article-body" style="margin-bottom: 40px;">
+                <h2 class="section-title">처음 갈 때 다들 겪는 결정장애, 왜 생길까요?</h2>
+                <p>솔직히 지갑 사정 생각하면 머리 아프고, 막상 갔다가 내 취향이랑 안 맞아서 돈만 날리면 어쩌나 걱정되는 게 당연하잖아요. 인터넷에 검색해 보면 온통 '언니 수질 좋다', '최저가 보장한다' 같은 영혼 없는 광고 글뿐이라 진짜 정보가 뭔지 구별하기 힘드셨을 겁니다.</p>
+                <p>그래서 저희는 화려한 수식어를 싹 다 빼고, 오직 시스템의 형태와 운영 방식, 그리고 상대적인 예산 가이드를 기준으로 삼아 직관적으로 비교해 드리려고 해요. 내 목적에 딱 맞는 곳이 어디인지 지금 바로 확인해 보세요.</p>
+            </section>
+
+            <!-- MAIN COMPARISON GRID -->
+            <section id="comparison" style="margin-bottom: 50px;">
+                <h2 class="section-title">대표 업종 4가지 핵심 요약</h2>
+                <div class="grid-comparison">
+                    <div class="m-card-9vfc-box">
+                        <div class="n-txt-5bpw-border" style="transform: none; margin-bottom: 15px;">실속형 / 대중성</div>
+                        <h3 style="font-size: 1.5rem; font-weight: 900; margin-bottom: 10px;">셔츠룸 (Shirt Room)</h3>
+                        <p style="font-size: 0.95rem; color: #444; margin-bottom: 15px;">비즈니스 셔츠 콘셉트를 기반으로 하는 캐주얼 룸입니다. 시간제 로테이션이 거의 없고, 정해진 시간 동안 한 파트너와 유지되는 직관적인 시스템이 특징입니다.</p>
+                        <p style="font-weight: 700; font-size: 0.9rem;">적합 인원: 1인 ~ 4인 선호</p>
+                    </div>
+
+                    <div class="m-card-9vfc-box">
+                        <div class="n-txt-5bpw-border" style="transform: none; margin-bottom: 15px; background-color: #fff; border: 2px solid #000;">정통 / 비즈니스</div>
+                        <h3 style="font-size: 1.5rem; font-weight: 900; margin-bottom: 10px;">정통 룸싸롱 (Classic Room)</h3>
+                        <p style="font-size: 0.95rem; color: #444; margin-bottom: 15px;">가장 표준적인 형태의 비즈니스 룸입니다. 대화 중심의 정적인 접대나 진중한 모임에 주로 활용되며, 프라이버시가 강하게 보장되는 정통 구조를 고수합니다.</p>
+                        <p style="font-weight: 700; font-size: 0.9rem;">적합 인원: 2인 ~ 6인 선호</p>
+                    </div>
+
+                    <div class="m-card-9vfc-box">
+                        <div class="n-txt-5bpw-border" style="transform: none; margin-bottom: 15px;">하이엔드 / 프리미엄</div>
+                        <h3 style="font-size: 1.5rem; font-weight: 900; margin-bottom: 10px;">텐프로 / 쩜오 (High-End)</h3>
+                        <p style="font-size: 0.95rem; color: #444; margin-bottom: 15px;">철저한 회원제 및 소개 위주로 운영되는 고급 업종입니다. 1:1 고정이 아니라 한 파트너가 여러 방을 순환(더블)하는 독특한 로테이션 룰이 적용됩니다.</p>
+                        <p style="font-weight: 700; font-size: 0.9rem;">적합 인원: 소수 정예 및 바이어 접대</p>
+                    </div>
+
+                    <div class="m-card-9vfc-box">
+                        <div class="n-txt-5bpw-border" style="transform: none; margin-bottom: 15px; background-color: #000; color: #fff;">자유도 / 파티</div>
+                        <h3 style="font-size: 1.5rem; font-weight: 900; margin-bottom: 10px;">가라오케 (Karaoke)</h3>
+                        <p style="font-size: 0.95rem; color: #444; margin-bottom: 15px;">넓은 공간과 대형 음향 장비가 기본 탑재된 파티 중심 공간입니다. 주류와 음향 중심의 세팅으로 동호회, 생일 파티, 대형 회식 등 단체 모임에 최적화되어 있습니다.</p>
+                        <p style="font-weight: 700; font-size: 0.9rem;">적합 인원: 4인 이상 단체 권장</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DETAILED DEEP DIVE -->
+            <section class="article-body" style="margin-bottom: 40px;">
+                <h2 class="section-title">시스템과 룰의 결정적 차이</h2>
+                <p>가장 많이 헷갈려 하시는 부분이 <strong>"왜 텐프로는 더 비싼데 파트너가 자리를 자꾸 비우나요?"</strong>라는 점입니다. 이게 바로 '더블 시스템' 때문인데요. 고급 업종일수록 파트너가 한 테이블에 고정되지 않고 여러 방을 오가며 분위기를 리드하는 독특한 룰을 가지고 있습니다. 반면 셔츠룸이나 정통 룸은 한 번 매칭되면 시간 종료 시까지 고정으로 케어하는 시스템이라 초보자분들이 직관적으로 이용하기에 훨씬 편하다는 평이 많죠.</p>
+                <p>가라오케의 경우는 시스템 자체가 매우 캐주얼합니다. 노래 부르고 춤추는 등 자유로운 파티 분위기가 기본 베이스이기 때문에, 격식 차리는 비즈니스 자리보다는 친한 지인들끼리 왁자지껄하게 스트레스를 풀고 싶을 때 가야 돈이 아깝지 않습니다.</p>
+            </section>
+
+            <!-- THE RAW MATRIX TABLE -->
+            <section id="matrix" style="margin-bottom: 50px;">
+                <h2 class="section-title">팩트 기반 정밀 매트릭스</h2>
+                <div class="matrix-table-wrapper">
+                    <table class="matrix-table">
+                        <thead>
+                            <tr>
+                                <th>업종 구분</th>
+                                <th>매칭 방식</th>
+                                <th>공간 분위기</th>
+                                <th>상대적 비용</th>
+                                <th>추천 목적</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <strong><td>셔츠룸</td></strong>
+                                <td>1:1 전담 고정식</td>
+                                <td>캐주얼, 화끈함</td>
+                                <td>실속형 (중저가)</td>
+                                <td>친구 모임, 가성비 음주</td>
+                            </tr>
+                            <tr>
+                                <strong><td>정통 룸싸롱</td></strong>
+                                <td>1:1 전담 고정식</td>
+                                <td>차분함, 격식 지향</td>
+                                <td>중고가</td>
+                                <td>비즈니스 접대, 조용한 대화</td>
+                            </tr>
+                            <tr>
+                                <strong><td>텐프로 / 쩜오</td></strong>
+                                <td>로테이션 (더블 시스템)</td>
+                                <td>하이엔드, 프라이빗</td>
+                                <td>최고가</td>
+                                <td>VVIP 접대, 특별한 날</td>
+                            </tr>
+                            <tr>
+                                <strong><td>가라오케</td></strong>
+                                <td>선택적 세팅</td>
+                                <td>왁자지껄, 파티형</td>
+                                <td>합리적 (단체 유리)</td>
+                                <td>생일 파티, 단체 회식</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SELECTION FLOW -->
+            <section class="r-ico-4fa9-border" style="margin-bottom: 50px;">
+                <h3 style="font-size: 1.6rem; font-weight: 900; margin-bottom: 15px;">나에게 맞는 업종 선택 팁</h3>
+                <p style="margin-bottom: 15px;">아직도 고민되신다면 아래의 단순한 질문을 스스로에게 던져보세요.</p>
+                <ul style="list-style-type: square; padding-left: 20px; font-weight: 700; line-height: 2;">
+                    <li>조용히 중요한 비즈니스 이야기를 나눠야 하나요? &rarr; <span style="background-color: var(--acid-yellow);">정통 룸싸롱</span></li>
+                    <li>복잡한 룰 없이 직관적이고 편한 분위기가 좋나요? &rarr; <span style="background-color: var(--acid-yellow);">셔츠룸</span></li>
+                    <li>금액에 상관없이 최상급 프라이빗 케어가 필요한가요? &rarr; <span style="background-color: var(--acid-yellow);">텐프로/쩜오</span></li>
+                    <li>단체로 노래 부르고 파티처럼 놀고 싶나요? &rarr; <span style="background-color: var(--acid-yellow);">가라오케</span></li>
+                </ul>
+            </section>
+
+            <!-- FAQ SECTION -->
+            <section id="faq" class="faq-block">
+                <h2 class="section-title">자주 묻는 질문 (FAQ)</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span style="background-color: #000; color: #fff; padding: 2px 8px;">Q</span>
+                        <span>초보자에게 가장 무난한 업종은 무엇인가요?</span>
+                    </div>
+                    <div class="faq-answer">
+                        로테이션 룰이 없어 직관적이고 견적 산출이 투명한 셔츠룸이나 대중적인 가라오케가 초보자가 진입하기에 가장 무리가 없습니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span style="background-color: #000; color: #fff; padding: 2px 8px;">Q</span>
+                        <span>더블 시스템(로테이션)이 정확히 무엇인가요?</span>
+                    </div>
+                    <div class="faq-answer">
+                        한 명의 파트너가 여러 테이블을 시간차를 두고 번갈아 가며 접객하는 방식입니다. 주로 쩜오나 텐프로 등 하이엔드 업종에서 사용되는 고유한 운영 룰입니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span style="background-color: #000; color: #fff; padding: 2px 8px;">Q</span>
+                        <span>혼자 방문하기에 적당한 곳도 있나요?</span>
+                    </div>
+                    <div class="faq-answer">
+                        1인 방문 시에는 시간당 고정식 시스템인 셔츠룸이나 정통 룸 계열이 적절하며, 독대를 통해 조용히 대화를 나누는 형태로 진행되는 편입니다.
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- SIDEBAR -->
+        <aside class="q-side-avsg">
+            <div class="q-sid">
+                <h3>업계 팩트 가이드</h3>
+                <ul>
+                    <li><a href="#comparison">&bull; 주요 4대 업종 특징</a></li>
+                    <li><a href="#matrix">&bull; 정밀 매트릭스 표</a></li>
+                    <li><a href="#faq">&bull; 자주 묻는 질문</a></li>
+                </ul>
+                <div style="margin-top: 30px; border-top: var(--border-thin); padding-top: 20px; font-size: 0.9rem;">
+                    <strong>주의사항:</strong> 본 블로그는 공정하고 객관적인 정보만을 기록하며, 불법 업소의 알선 및 허위 과장 광고를 엄격히 배제합니다.
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo" style="font-size: 2.5rem; margin-bottom: 20px;">FACT MATRIX</div>
+            <p>서울 유흥 업종 정밀 비교 분석 및 팩트 데이터 전문 아카이브</p>
+            <p class="footer-text">
+                &copy; FACT MATRIX. All rights reserved. 본 웹사이트의 모든 콘텐츠는 객관적 시스템 분석을 바탕으로 작성되었으며, 무단 도용 및 복제를 금지합니다.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
