@@ -31,7 +31,17 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://editor.nonhyeonnight.xyz/posts/field_note-002-21a75g.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://editor.nonhyeonnight.xyz/posts/field_note-002-cd6xfu.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://editor.nonhyeonnight.xyz/posts/guide-001-1ey4x3j.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -51,12 +61,22 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://editor.nonhyeonnight.xyz/posts/major_compare-003-lp02sd.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://editor.nonhyeonnight.xyz/posts/major_compare-003-xiyts3.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://editor.nonhyeonnight.xyz/posts/myth-004-8oa8rx.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://editor.nonhyeonnight.xyz/posts/myth-005-1lsi99p.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -72,6 +92,11 @@
   </url>
   <url>
     <loc>https://editor.nonhyeonnight.xyz/posts/qa-004-1jxjwk4.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://editor.nonhyeonnight.xyz/posts/qa-004-ofqtu4.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
