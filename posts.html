@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 · t2-editor-nonhyeonnight</title>
+  <meta name="description" content="t2-editor-nonhyeonnight에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://editor.nonhyeonnight.xyz/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* CSS RESET & VARIABLES */
+ *, *::before, *::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+ :root {
+ --primary: #dfff00; /* Acid Yellow */
+ --secondary: #000000;
+ --bg: #ffffff;
+ --card-bg: #fafafa;
+ --border-width: 4px;
+ --font-mono: 'Courier New', Courier, monospace;
+ }
+ body {
+ background-color: var(--bg);
+ font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+ color: var(--secondary);
+ line-height: 1.6;
+ overflow-x: hidden;
+ }
+
+ /* STREET BRUTALIST & NEO-GROTESQUE UTILITIES */
+ .r-ico-4fa9-border {
+ border: var(--border-width) solid var(--secondary);
+ }
+ .n-txt-5bpw-border {
+ text-shadow: -2px -2px 0 var(--secondary), 2px -2px 0 var(--secondary), -2px 2px 0 var(--secondary), 2px 2px 0 var(--secondary);
+ color: var(--primary);
+ }
+ .m-card-9vfc-box {
+ background: var(--bg);
+ border: var(--border-width) solid var(--secondary);
+ box-shadow: 8px 8px 0px var(--secondary);
+ transition: transform 0.15s ease, box-shadow 0.15s ease;
+ padding: 30px;
+ }
+ .m-card-9vfc-box:hover {
+ transform: translate(4px, 4px);
+ box-shadow: 4px 4px 0px var(--secondary);
+ }
+
+ /* LAYOUT & HEADER */
+ header {
+ background: var(--primary);
+ border-bottom: var(--border-width) solid var(--secondary);
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ .nav-container {
+ max-width: 1200px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 15px 20px;
+ }
+ .logo {
+ font-size: 1.5rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: var(--secondary);
+ border: var(--border-width) solid var(--secondary);
+ padding: 5px 15px;
+ background: var(--bg);
+ box-shadow: 4px 4px 0px var(--secondary);
+ }
+ .nav-links {
+ display: flex;
+ gap: 15px;
+ }
+ .nav-links a {
+ text-decoration: none;
+ color: var(--secondary);
+ font-weight: 700;
+ font-size: 0.95rem;
+ padding: 5px 10px;
+ border: 2px solid transparent;
+ }
+ .nav-links a:hover, .nav-links a.active {
+ border: 2px solid var(--secondary);
+ background: var(--bg);
+ }
+
+ /* HERO SECTION */
+ .hero-section {
+ background: var(--secondary);
+ color: var(--bg);
+ padding: 80px 20px;
+ text-align: center;
+ border-bottom: var(--border-width) solid var(--secondary);
+ }
+ .hero-container {
+ max-width: 900px;
+ margin: 0 auto;
+ }
+ .hero-tag {
+ display: inline-block;
+ background: var(--primary);
+ color: var(--secondary);
+ font-weight: 800;
+ padding: 5px 15px;
+ margin-bottom: 20px;
+ text-transform: uppercase;
+ font-size: 0.9rem;
+ border: 2px solid var(--bg);
+ }
+ .hero-title {
+ font-size: 3rem;
+ font-weight: 900;
+ line-height: 1.1;
+ margin-bottom: 25px;
+ word-break: keep-all;
+ }
+ .hero-desc {
+ font-size: 1.2rem;
+ max-width: 700px;
+ margin: 0 auto;
+ color: #cccccc;
+ }
+
+ /* MAIN CONTENT */
+ main {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 60px 20px;
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ gap: 50px;
+ }
+
+ @media (max-width: 992px) {
+ main {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ .content-area {
+ display: flex;
+ flex-direction: column;
+ gap: 40px;
+ }
+
+ .section-title {
+ font-size: 2rem;
+ font-weight: 900;
+ margin-bottom: 20px;
+ border-bottom: var(--border-width) solid var(--secondary);
+ padding-bottom: 10px;
+ display: inline-block;
+ }
+
+ .story-block {
+ font-size: 1.1rem;
+ line-height: 1.8;
+ }
+ .story-block p {
+ margin-bottom: 20px;
+ }
+ .story-block strong {
+ background: var(--primary);
+ padding: 2px 5px;
+ color: var(--secondary);
+ }
+
+ /* GRID MATRIX FOR STANDARDS */
+ .standards-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 20px;
+ margin-top: 30px;
+ }
+ @media (max-width: 768px) {
+ .standards-grid {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ /* SIDEBAR */
+ .sidebar {
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+ }
+ .sidebar-widget {
+ border: var(--border-width) solid var(--secondary);
+ padding: 25px;
+ background: var(--primary);
+ }
+ .sidebar-widget-title {
+ font-size: 1.3rem;
+ font-weight: 900;
+ margin-bottom: 15px;
+ text-transform: uppercase;
+ border-bottom: 2px solid var(--secondary);
+ padding-bottom: 5px;
+ }
+
+ /* FOOTER */
+ footer {
+ background: var(--secondary);
+ color: var(--bg);
+ border-top: var(--border-width) solid var(--secondary);
+ padding: 50px 20px;
+ margin-top: 80px;
+ }
+ .footer-container {
+ max-width: 1200px;
+ margin: 0 auto;
+ display: grid;
+ grid-template-columns: 1.5fr 1fr;
+ gap: 40px;
+ }
+ @media (max-width: 768px) {
+ .footer-container {
+ grid-template-columns: 1fr;
+ }
+ }
+ .footer-info h4 {
+ font-size: 1.2rem;
+ font-weight: 900;
+ margin-bottom: 15px;
+ color: var(--primary);
+ }
+ .footer-info p {
+ font-size: 0.9rem;
+ color: #aaaaaa;
+ line-height: 1.6;
+ }
+ .footer-links {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ }
+ .footer-links a {
+ color: #ffffff;
+ text-decoration: none;
+ font-size: 0.9rem;
+ }
+ .footer-links a:hover {
+ color: var(--primary);
+ }
+ .copyright {
+ margin-top: 40px;
+ border-top: 1px solid #333333;
+ padding-top: 20px;
+ font-size: 0.8rem;
+ color: #777777;
+ text-align: center;
+ }
+ </style>
+  <meta property="og:title" content="글 목록 · t2-editor-nonhyeonnight">
+  <meta property="og:description" content="t2-editor-nonhyeonnight에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://editor.nonhyeonnight.xyz/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="nav-container">
+ <a href="/" class="logo">SEOUL MATRIX</a>
+ <nav class="nav-links">
+ <a href="/">홈</a>
+ <a href="/matrix">업종 비교 매트릭스</a>
+ <a href="/analysis">정밀 분석</a>
+ <a href="/about" class="active">소개</a>
+ </nav>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 15개</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-001-1lm323g.html">유흥 업종 비교 현장에서 확인한 선택 기준과 주의점</a>
+        <p class="post-item__summary">서울과 같은 대도시 지역에서는 유흥 업종의 형태가 매우 다양하게 발전하고 있으며, 각 업종마다 제공되는 서비스의 성격과 운영 방식에서 명확한 차이를 보입니다. 유흥 업종 비교를 진행할 때는 단순히 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-002-21a75g.html">홍대 바닥에서 남의 주머니 사정 계산기 두드려본 썰</a>
+        <p class="post-item__summary">2023년 12월 홍대 뒷골목, 폐업 딱지 붙은 가게들 사이에서 셔터가 굳게 닫힌 한 라운지 바의 재떨이에 담배꽁초가 산더미처럼 쌓여 있더군요. 사실 이 가게, 제가 꽤나 오래 다니던 단골이었는데,</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-002-cd6xfu.html">유니콘 3초 때문에 25년을 말바꾼 리들리 스캇의 진짜 속내</a>
+        <p class="post-item__summary">2007년 10월, 리들리 스캇이 블레이드 러너 파이널 컷의 최종 마스터링을 승인하던 순간이었다. 그가 가장 집착한 건 3초짜리 유니콘 꿈 시퀀스의 퀄리티였다. 이 장면은 단순한 삽입이 아니라, 그</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-001-1ey4x3j.html">서울 유흥 시장의 숨겨진 지표와 업종별 특이점 분석</a>
+        <p class="post-item__summary">서울 내에서 이루어지는 수많은 유흥 업소 간의 차이를 단순히 가격이나 위치로만 구분하는 건 하수들이나 하는 짓이다. 필자가 수년간 모아온 데이터를 보면 각 업종이 지향하는 시스템과 그에 따른 고객층</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-001-cy1i3f.html">슬라이드 7장, 니가 본 PRISM 기사에는 없던 그 진짜 데이터</a>
+        <p class="post-item__summary">2007년 9월 10일, 페이스북. 2008년 10월 14일, 야후. 2007년 9월 6일, 구글. 2007년 12월 4일, 마이크로소프트.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-005-172ydt2.html">정보 블로그 해결 방법 총정리</a>
+        <p class="post-item__summary">서울과 같은 대도시에서는 다양하게 형성된 유흥 업종과 관련해 정확하고 믿을 수 있는 정보를 얻는 것이 매우 중요합니다. 수많은 정보 블로그가 운영되고 있지만, 제공되는 내용의 객관성과 신뢰성을 식별</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-002-1ey7ogu.html">유흥 업종 비교 vs 유흥 업종 비교 비교</a>
+        <p class="post-item__summary">안녕하세요! 어떤 작업을 도와드릴까요?</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-003-lp02sd.html">월 3000 매출의 함정, 너희가 아는 유흥 업종 비교 장부는 전부 가짜다</a>
+        <p class="post-item__summary">매출이 높을수록 사업이 안전궤도에 오른다는 건 장사 근처에도 안 가본 인간들의 전형적인 망상이다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/major_compare-003-xiyts3.html">형들, 유흥업소 고를 때 &amp;#39;프리즘 7장&amp;#39;부터 보는 이유</a>
+        <p class="post-item__summary">2013년 6월 6일 새벽, 데이터 수집가인 내 모니터에 'PRISM' 검색어가 심장 박동처럼 뛰기 시작했다. 대부분은 화려한 1번 슬라이드(애플, 구글 로고 그림)에 집중했지만, 내가 주목한 건 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-004-8oa8rx.html">유흥 업종 비교에 대한 통념과 실제 차이를 검토했다</a>
+        <p class="post-item__summary">안녕하세요! 어떤 작업을 도와드릴까요? 구체적인 지시사항이나 요구사항을 말씀해 주시면 신속하게 도움을 드리겠습니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-005-1lsi99p.html">3천 매출의 배신, 유흥 업종 비교가 알려주지 않는 숫자의 함정</a>
+        <p class="post-item__summary">카운터 뒤에서 매일 밤 4시, 엑셀 창에 찍히는 빨간색 마이너스 숫자를 보며 담배를 씹던 기억이 납니다. 월 매출 3천을 찍어도 통장은 왜 비었을까요. 다들 유흥 업종 비교할 때 주류 원가나 인건비</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-005-1ufak2j.html">다크소울 데모 유출본이 증명한 통념과 실제 차이</a>
+        <p class="post-item__summary">일본 게임 아카이브에서 구한 2011년 TGS 데모 롬 속 Undead Parish의 돌계단은 정말 사소해 보였다. 비뚤어진 텍스처 하나가 박힌 그 계단이, 알고 보니 프롬소프트웨어의 레벨 디자인 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-003-5o3u9r.html">유흥 업종 비교 관련 질문을 상황별로 정리해봤다</a>
+        <p class="post-item__summary">사용자님, 어떤 작업을 진행할까요? 원하시는 요청 사항이나 개발/수정하고 싶으신 내용을 자세히 말씀해 주세요!</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-004-1jxjwk4.html">형님이 홍대 상권 망한 가게들 실거래 내역서 뒤져보니 나온 충격적인 패턴</a>
+        <p class="post-item__summary">사람들은 홍대 가게가 망하는 이유로 '임대료 폭등'이나 '유동인구 감소'를 꼽지만, 실제로 내 사무실에 들어오는 실거래 내역서를 뜯어보면 완전히 다른 구조적 문제가 보임.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-004-ofqtu4.html">홍대 바닥에서 살아남는 놈들은 대체 뭘 다르게 파는 걸까?</a>
+        <p class="post-item__summary">&quot;사장님, 이거 술 원가 생각하면 객단가 3만 원은 너무 박한 거 아닙니까?&quot; 2023년 11월, 홍대입구역 9번 출구 뒤편 골목, 이제는 간판을 내린 한 바에서 제가 툭 던진 말입니다. 그 사장은</p>
+      </li>
+      </ul>
+
+    </main>
+  </div>
+</body>
+</html>
